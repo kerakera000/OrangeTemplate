@@ -1,1 +1,165 @@
-/* No CSS *//*# sourceMappingURL=stylepc.css.map */
+body {
+  padding: 0%;
+  margin: 0%;
+}
+
+h2 {
+  font-size: 3.7vw;
+  font-family: 'Dela Gothic One', cursive;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-size: 1.5vw;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  position: fixed;
+  height: 5vw;
+  width: 100vw;
+  z-index: 900;
+}
+
+#header ul {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+}
+
+#header ul li {
+  padding: 0 5vw;
+}
+
+#header ul li a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  padding-bottom: 0.2px;
+  -webkit-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.2vw;
+}
+
+#header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 90%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+}
+
+#header div p {
+  padding: 0 1.5vw;
+}
+
+.top {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.top .load {
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  background-color: #D1131C;
+  height: 100vh;
+  width: 100%;
+  z-index: 999;
+  opacity: 1;
+}
+
+.top .load .load-text {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+  color: #FFFFFF;
+  text-align: center;
+  opacity: 0;
+}
+
+.top .load .load-text h1 {
+  font-size: 5.4vw;
+  letter-spacing: 0.3vw;
+  width: 90vw;
+  padding-bottom: 13vw;
+  margin: 0;
+  font-family: 'Dela Gothic One', cursive;
+}
+
+.top .load .load-text p {
+  font-size: 1.5vw;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.top .load .load-text-active {
+  opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.top .load-active {
+  overflow: scroll;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.top img {
+  width: 100%;
+  height: 100%;
+}
+
+.top .top-text {
+  width: 34vw;
+  position: absolute;
+  top: 50%;
+  left: 76%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+  text-align: center;
+}
+
+.top .top-text h2 {
+  font-family: 'Kaisei Decol', serif;
+}
+
+#story {
+  height: 100vh;
+  width: 100%;
+}
+/*# sourceMappingURL=stylepc.css.map */
