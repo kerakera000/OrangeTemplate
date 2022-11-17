@@ -6,6 +6,7 @@ jQuery(function () {
         jQuery('.load-text').addClass('load-text-active'); 
         jQuery('.load').delay(4000).queue(function(){
             jQuery('.load').addClass('load-active'); 
+            jQuery('.body').addClass('body-active');
         })
     });
   });
@@ -13,13 +14,24 @@ jQuery(function () {
 
     var thisOffset;
     jQuery(window).on('load', function () {
-        thisOffset = jQuery('#introduction').offset().top + jQuery('#introduction').outerHeight();
+        thisOffset = jQuery('#mainstorycontent').offset().top + jQuery('#mainstorycontent').outerHeight();
     });
     jQuery(window).scroll(function () {
         if (jQuery(window).scrollTop() + jQuery(window).height() > thisOffset) {
         // 特定の要素を超えた 
-        jQuery('#introduction').addClass('introduction-action'); 
         } else {
         // 特定の要素を超えていない
         }
     });
+
+//     var nav_pos = $("#global_nav").offset().top;
+// var nav_height = $("#global_nav").outerHeight();
+// $(window).scroll(function () {
+//     if ($(this).scrollTop() > nav_pos) {
+//         $("body").css("padding-top", nav_height);
+//         $("#global_nav").addClass("fixed");
+//     } else {
+//         $("body").css("padding-top", 0);
+//         $("#global_nav").removeClass("fixed");
+//     }
+// });

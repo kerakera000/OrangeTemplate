@@ -13,20 +13,20 @@
 
 		<link rel="preconnect" href="https://fonts.googleapis.com"> 
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-		<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Kaisei+Decol&family=Noto+Sans+JP:wght@300&family=Zen+Kaku+Gothic+New:wght@300&display=swap" rel="stylesheet">
-		
+		<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Kaisei+Decol&family=Lobster+Two:wght@700&family=Noto+Sans+JP:wght@300&family=Zen+Kaku+Gothic+New:wght@300;700&display=swap" rel="stylesheet">
+
 		<title><?php wp_title(); ?> orage template</title>
 
     <?php wp_head(); ?>
 	</head>
 
-	<body class="body-toggle" id="body" <?php body_class(); ?>>
+	<body class="body" id="body" <?php body_class(); ?>>
 
 	<header id="header">
 		<ul>
-			<li><a href="">TRALER</a></li>
-			<li><a href="">AMAZON</a></li>
-			<li><a href="">FILMARKS</a></li>
+			<li><a href="">Traler</a></li>
+			<li><a href="">Amazon</a></li>
+			<li><a href="">Filmarks</a></li>
 		</ul>
 		<div>
 			<p>instagram</p>
