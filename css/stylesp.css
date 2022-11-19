@@ -1,1 +1,79 @@
-/* No CSS *//*# sourceMappingURL=stylesp.css.map */
+@media screen and (max-width: 960px) {
+  p {
+    font-size: 3vw !important;
+  }
+  h2 {
+    font-size: 7vw !important;
+  }
+  #header {
+    display: none;
+  }
+  .top .toppc {
+    display: none;
+  }
+  .top .topsp {
+    display: block !important;
+  }
+  .top .top-text {
+    width: 65vw !important;
+    top: 74% !important;
+    left: 50% !important;
+  }
+  .top .top-text p {
+    width: 46vw !important;
+  }
+  #introduction .introduction-top-img-box {
+    height: 30vw !important;
+    margin: 0 0 15vw !important;
+  }
+  #introduction .introduction-title {
+    width: 80vw !important;
+    height: 8vw !important;
+    top: 11% !important;
+    left: 18% !important;
+  }
+  #introduction .introduction-content-image {
+    width: 100% !important;
+    height: 100vw !important;
+    display: -webkit-inline-box !important;
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important;
+    text-align: center !important;
+  }
+  #introduction .introduction-content-image img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  #introduction .introduction-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #introduction .introduction-content .introduction-main-text-sp {
+    font-size: 5vw !important;
+    display: block !important;
+    width: 47vw !important;
+    text-align: center !important;
+  }
+  #introduction .introduction-content .introduction-content-text {
+    width: 100% !important;
+    height: 100vw !important;
+  }
+  #introduction .introduction-content .introduction-content-text .introduction-main-text {
+    display: none !important;
+  }
+  #introduction .introduction-content .introduction-content-text p {
+    line-height: 9vw !important;
+    letter-spacing: 0.3vw !important;
+    height: 57vw !important;
+    font-size: 3.7vw !important;
+  }
+  #introduction .introduction-content .introduction-content-text .introduction-text-two {
+    height: 30vw !important;
+  }
+}
+/*# sourceMappingURL=stylesp.css.map */

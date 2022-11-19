@@ -75,8 +75,9 @@ a{
     position: relative;
     height: 100vh;
     width: 100%;
+    margin-bottom: 8vw;
     .load {
-        display: none;///////////////////////////////////////
+        display: none;////////////////////////////////
 
         position: absolute;
         background-color: #D1131C;
@@ -117,49 +118,96 @@ a{
     img{
         width: 100%;
         height: 100%;
+        object-fit: contain;
+    }
+    .topsp{
+        display: none;
     }
     .top-text{
         width: 34vw;
         position: absolute;
-        top: 50%;
-        left: 76%;
+        top: 58%;
+        left: 75%;
         transform: translateY(-50%) translateX(-50%);
         text-align: center;
+        color: #FFFFFF;
         h2{
             font-family: 'Kaisei Decol', serif;
+            span{
+                color: #EA862A;
+            }
+        }
+        p{
+            display: inline-block;
+            width: 23vw;
         }
     }
 }
 
-#story{
+#introduction{
     width: 100%;
-    .story-inner{
+    position: relative;
+    .introduction-top-img-box{
         width: 100%;
-        padding: 0 6vw;
-        position: relative;
-        .story-top-img-box{
+        height: 27vw;
+        text-align: center;
+        margin: 0 0 5vw;
+        img{
+            display: inline-block;
             width: 100%;
-            height: 10vw;
-            margin: 5vw 0;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .introduction-title{
+        width: 53vw;
+        height: 5vw;
+        position: absolute;
+        top: 26%;
+        left: 47%;
+        box-shadow: 0 0 10px 15px #f5f5f5;
+        background-color: #f5f5f5;
+        h2{
             text-align: center;
-            img{
-                display: inline-block;
-                width: 20vw;
-                height: 100%;
-                object-fit: cover;
+            letter-spacing: 0.5vw;
+            span{
+                color: #EA862A;
+                letter-spacing: 0.5vw;
             }
         }
     }
-    .story-content{
+    .introdction-icon{
+        width: 10vw;
+        height: 10vw;
+        object-fit: contain;
+        position: absolute;
+        top: 35%;
+        right: 10%;
+    }
+    .introduction-inner{
+        width: 100%;
+        padding: 0 6vw;
+        position: relative;
+        margin-bottom: 6vw;
+    }
+    .introduction-content{
         display: flex;
         height: 85%;
-        .story-content-image{
+        .introduction-main-text-sp{
+            display: none;
+            font-family: 'Kaisei Decol', serif;
+            span{
+                color: #EA862A;
+            }
+        }
+        .introduction-content-image{
             width: 50%;
             height: 52vw;
             img{
                 width: 95%;
                 height: 95%;
                 object-fit: contain;
+                transition: 0.3s;
             }
             & :hover{
                 transition: 0.3s;
@@ -167,16 +215,19 @@ a{
                 height: 100%;
             }
         }
-        .story-content-text{
+        .introduction-content-text{
             width: 50%;
             height: 52vw;
             text-align: center;
             padding: 4vw 6vw 2vw;
-            h2{
+            .introduction-main-text{
                 display: inline-block;
-                width: 24vw;
+                width: 26vw;
                 font-size: 2.5vw;
                 font-family: 'Kaisei Decol', serif;
+                height: 6vw;
+                text-align: center;
+                padding: 0;
                 span{
                     color: #EA862A;
                 }
@@ -195,6 +246,96 @@ a{
                 height: 13vw;
             }
         }
+    }
+}
+
+#story{
+    width: 100%;
+    position: relative;
+    .story-top-img{
+        width: 100%;
+        height: 27vw;
+        text-align: center;
+        margin: 0 0 10vw;
+        img{
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .story-title{
+        width: 60vw;
+        height: 5vw;
+        position: absolute;
+        top: 13%;
+        left: 50%;
+        transform: translateY(0%) translateX(-50%);
+        box-shadow: 0 0 10px 15px #f5f5f5;
+        background-color: #f5f5f5;
+        .story-title-content{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            h2{
+                text-align: center;
+                letter-spacing: 0.5vw;
+                span{
+                    color: #EA862A;
+                    letter-spacing: 0.5vw;
+                }
+            }
+            .story-title-img{
+                width: 13vw;
+                height: 5vw;
+                position: absolute;
+                top: 0%;
+                left: 10%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    .story-inner{
+        width: 100%;
+        padding: 0 6vw;
+        .story-box{
+            position: relative;
+            width: 100%;
+            height: 40vw;
+            margin-bottom: 10vw;
+            p{
+                width: 34vw;
+                display: inline-block;
+                position: absolute;
+                top: 0%;
+                left: 7%;
+                text-align: center;
+                line-height: 5vw;
+                letter-spacing: 0.2vw;
+                font-weight: 700;
+            }
+            .story-icon{
+                width: 15vw;
+                height: 15vw;
+                object-fit: cover;
+                position: absolute;
+                top: 55%;
+                left: 16%;
+            }
+            .story-img{
+                width: 34vw;
+                height: 38vw;
+                object-fit: cover;
+                position: absolute;
+                top: 0%;
+                right: 7%;
+            }
+        }
+
     }
 }
 
@@ -266,49 +407,64 @@ a{
                 padding-top: 3vw;
             }
         }
+        .review-singin-img{
+            width: 25vw;
+            height: 30vw;
+            object-fit: contain;
+            top: 13%;
+            position: absolute;
+        }
+        .review-hotpant-img{
+            width: 15vw;
+            height: 15vw;
+            object-fit: contain;
+            top: 10%;
+            right: 8%;
+            position: absolute;
+        }
     }
 }
 
-#footer{
+#clockwork{
     width: 100%;
-    height: 70vh;
+    height: 50vw;
     position: relative;
-    .footer-box{
+    .clockwork-box{
         position: absolute;
-        top: 50%;
+        top: 10%;
         left: 50%;
-        transform: translateY(-50%) translateX(-50%);
-        .footer-conten{
+        transform: translateY(0%) translateX(-50%);
+        .clockwork-conten{
             width: 75vw;
-            height: 25vw;
+            height: 40vw;
             display: inline-block;
-            .footer-clock{
+            .clockwork-clock{
                 width: 100%;
-                height: 8vw;
+                height: 27vw;
                 object-fit: cover;
             }
-            .footer-text{
+            .clockwork-text{
                 font-family: 'Lobster Two', cursive;
                 display: inline-block;
                 position: absolute;
-                top: 57%;
-                left: 37%;
+                top: 87%;
+                left: 35%;
                 transform: translateY(-50%) translateX(-50%);
             }
-            .footer-moloko{
+            .clockwork-moloko{
                 display: inline-block;
                 position: absolute;
-                top: 55%;
+                top: 85%;
                 left: 50%;
                 transform: translateY(-50%) translateX(-50%);
             }
-            .footer-footerhuman{
+            .clockwork-footerhuman{
                 position: absolute;
-                top: 50%;
+                top: 80%;
                 left: 70%;
                 transform: translateY(-50%) translateX(-50%);
             }
-            .footer-copy{
+            .clockwork-copy{
                 width: 100%;
                 text-align: center;
                 position: absolute;
@@ -316,6 +472,14 @@ a{
                 left: 50%;
                 transform: translateY(0%) translateX(-50%);
             }
+        }
+    }
+}
+
+#footer{
+    .footer-box{
+        .footer-copy{
+            text-align: center;
         }
     }
 }

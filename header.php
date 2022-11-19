@@ -41,10 +41,11 @@
 				<p>Designed by OO Group, member of 4 who like movies, just for practice and hobby.</p>
 			</div>
 		</div>
-		<img src="<?php bloginfo('stylesheet_directory'); ?>/images/orangetoppc.jpg" alt="">
+		<img class="toppc" src="<?php bloginfo('stylesheet_directory'); ?>/images/toppc.png" alt="">
+		<img class="topsp" src="<?php bloginfo('stylesheet_directory'); ?>/images/topsp.png" alt="">
 		<div class="top-text">
 			<p>ULTRA VIOLENCE</p>
-			<h2>傑作の超暴力的映画</h2>
+			<h2>傑作の<span>超暴力的</span>映画</h2>
 			<p>並外れた映像、音楽、台詞そして情感の力作</p>
 		</div>
 	</div>
