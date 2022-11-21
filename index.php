@@ -37,7 +37,7 @@
         <div class="story-inner">
             <div class="story-box">
                 <p>15歳の少年アレックスは3人の仲間と毎夜犯罪の限りを尽くしていた。3人のドルーグ達のボスである彼は仲間だろうと異論を唱える者には容赦しない。</p>
-                <img class="story-icon" src="<?php bloginfo('stylesheet_directory'); ?>/images/story-icon.png" alt="">
+                <img class="story-icon story-icon-one" src="<?php bloginfo('stylesheet_directory'); ?>/images/story-icon.png" alt="">
                 <img class="story-img" src="<?php bloginfo('stylesheet_directory'); ?>/images/story-img-one.png" alt="">
             </div>
             <div class="story-box">
@@ -47,7 +47,7 @@
             </div>
             <div class="story-box">
                 <p>ある日彼は「治療を受ければわずか2週間で釈放で再犯の恐れもない。」というルドヴィコ式心療法の噂を耳にする。模範囚であった彼はその被験者に志願するだのが・・・。</p>
-                <img class="story-icon" src="<?php bloginfo('stylesheet_directory'); ?>/images/story-icon.png" alt="">
+                <img class="story-icon story-icon-three" src="<?php bloginfo('stylesheet_directory'); ?>/images/story-icon.png" alt="">
                 <img class="story-img" src="<?php bloginfo('stylesheet_directory'); ?>/images/story-img-three.png" alt="">
             </div>
         </div>
@@ -62,7 +62,8 @@
         </div>
         <div class="review-content">
             <div class="review-background">
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/images/footerbackgroun.svg" alt="">
+                <img class="footer-background-pc" src="<?php bloginfo('stylesheet_directory'); ?>/images/footerbackgroun.svg" alt="">
+                <img class="footer-background-sp" src="<?php bloginfo('stylesheet_directory'); ?>/images/footerbackgrounSP.png" alt="">
             </div>
                 <img class="review-singin-img" src="<?php bloginfo('stylesheet_directory'); ?>/images/singin.png" alt="">
                 <img class="review-hotpant-img" src="<?php bloginfo('stylesheet_directory'); ?>/images/hotpant.png" alt="">
@@ -77,10 +78,32 @@
         <div class="clockwork-box">
             <div class="clockwork-conten">
                 <img class="clockwork-clock" src="<?php bloginfo('stylesheet_directory'); ?>/images/clock.png" alt="">
+                <img class="clockwork-clocksp" src="<?php bloginfo('stylesheet_directory'); ?>/images/clocksp.png" alt="">
                 <p class="clockwork-text">B y</p>
                 <img class="clockwork-moloko" src="<?php bloginfo('stylesheet_directory'); ?>/images/moloko.png" alt="">
                 <img class="clockwork-footerhuman" src="<?php bloginfo('stylesheet_directory'); ?>/images/footerhuman.png" alt="">
             </div>
+
+            <ul>
+                <?php
+                    $args = array(
+                        'posts_per_page' => 2 // 表示件数の指定
+                    );
+                    $posts = get_posts( $args );
+                    foreach ( $posts as $post ): // ループの開始
+                    setup_postdata( $post ); // 記事データの取得
+                ?>
+                    <li>
+                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+                    </li>
+                <?php
+                    endforeach; // ループの終了
+                    wp_reset_postdata(); // 直前のクエリを復元する
+                ?>
+            </ul>
+
+            
         </div>
+
     </section>
 <?php get_footer(); ?>

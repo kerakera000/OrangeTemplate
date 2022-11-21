@@ -1,4 +1,6 @@
 <?php 
+add_theme_support('post-thumbnails');
+//アイキャッチを表示する内容
 function load_scripts(){ 
 
   wp_enqueue_script( 

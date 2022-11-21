@@ -385,9 +385,12 @@ a{
     .review-content{
         position: relative;
         .review-background{
-            img{
+            .footer-background-pc{
                 width: 100%;
                 object-fit: cover;
+            }
+            .footer-background-sp{
+                display: none;
             }
         }
         .review-content-text{
@@ -443,6 +446,9 @@ a{
                 height: 27vw;
                 object-fit: cover;
             }
+            .clockwork-clocksp{
+                display: none;
+            }
             .clockwork-text{
                 font-family: 'Lobster Two', cursive;
                 display: inline-block;
@@ -473,6 +479,7 @@ a{
                 transform: translateY(0%) translateX(-50%);
             }
         }
+        
     }
 }
 
@@ -480,6 +487,228 @@ a{
     .footer-box{
         .footer-copy{
             text-align: center;
+        }
+    }
+}
+
+///////////////////////////////////////////////sp///////////////////////////////////////////////sp
+///////////////////////////////////////////////sp///////////////////////////////////////////////sp
+///////////////////////////////////////////////sp///////////////////////////////////////////////sp
+@media screen and (max-width: 960px) {
+    p{
+        font-size: 3.7vw;
+    }
+    h2{
+        font-size: 6vw;
+    }
+    #header{
+        display: none;
+    }
+    .top{
+        .toppc{
+            display: none;
+        }
+        .topsp{
+            display: block;
+        }
+        .top-text{
+            width: 65vw;
+            top: 74%;
+            left: 50%;
+            p{
+                width: 46vw;
+            }
+        }
+    }
+    #introduction{
+        .introduction-top-img-box{
+            height: 30vw;
+            margin: 0 0 15vw;
+        }
+        .introduction-title{
+            width: 80vw;
+            height: 8vw;
+            top: 9%;
+            left: 18%;
+        }
+        .introduction-content-image{
+            width: 100% !important;
+            height: 89vw !important;
+            display: inline-flex;
+            text-align: center;
+            padding: 5vw 0 0 ;
+            img{
+                width: 100% !important;
+                height: 100% !important;
+            }
+        }
+        .introduction-content{
+            flex-flow: column;
+            align-items: center;
+            .introduction-main-text-sp{
+                font-size: 5vw;
+                display: block;
+                width: 47vw;
+                text-align: center;
+            }
+            .introduction-content-text{
+                width: 100%;
+                height: 100vw;
+                .introduction-main-text{
+                    display: none;
+                }
+                p{
+                    line-height: 9vw;
+                    letter-spacing: 0.3vw;
+                    height: 57vw;
+                    font-size: 3.7vw;
+                }
+                .introduction-text-two{
+                    height: 30vw;
+                }
+            }
+        }
+    }
+
+    #story{
+        .story-top-img {
+            height: 30vw;
+            margin: 0 0 15vw;
+        }
+        .story-title {
+            top: 5%;
+            width: 75vw;
+            height: 10vw;
+            .story-title-content{
+                h2{
+                    padding: 0 0 0 11vw;
+                }
+                .story-title-img{
+                    width: 20vw;
+                    height: 8vw;
+                    top: -12%;
+                    left: 9%;
+                }
+            } 
+        }
+        .story-inner{
+            .story-box{
+                height: 130vw;
+                .story-img{
+                    width: 100%;
+                    height: 50vw;
+                    left: 50%;
+                    transform: translateY(0%) translateX(-50%);
+                }
+                p{
+                    line-height: 11vw;
+                    letter-spacing: 0.3vw;
+                    font-size: 3.7vw;
+                    width: 70vw;
+                    top: 42%;
+                    left: 50%;
+                    transform: translateY(0%) translateX(-50%);
+                }
+                .story-icon{
+                    width: 32vw;
+                    height: 32vw;
+                    top: 70%;
+                    left: 50%;
+                    transform: translateY(0%) translateX(-50%);
+                }
+                .story-icon-one{
+                    top: 75%;
+                }
+                .story-icon-three{
+                    top: 84%;
+                }
+            }
+        }
+    }
+
+    #review{
+        .review-title-img{ 
+            img{
+                height: 50vw;
+                object-position : 70% 50%;
+            } 
+        }
+        .review-title{
+            width: 11vw;
+            top: 5%;
+        }
+        .review-content{
+            .review-background{
+                width: 100%;
+                .footer-background-pc{
+                    display: none;
+                }
+                .footer-background-sp{
+                    display: block;
+                    width: 100%;
+                }
+            }
+            .review-content-text{
+                width: 70vw;
+                font-size: 3.7vw;
+                line-height: 9vw;
+                letter-spacing: 0.3vw;
+                left: 50%;
+            }
+            .review-hotpant-img{
+                width: 23vw;
+                height: 23vw;
+                top: 18%;
+                right: 0%;
+            }
+            .review-singin-img{
+                width: 45vw;
+                height: 40vw;
+                top: 65%;
+                left: 50%;
+                transform: translateY(0%) translateX(-50%);
+            }
+        }
+    }
+
+    #clockwork{
+        height: 120vw;
+        .clockwork-box{
+            height: 95vw;
+            width: 95vw;
+            top: 0%;
+            .clockwork-conten{
+                height: 100vw;
+                width: 100%;
+                position: relative;
+                .clockwork-clock{
+                    display: none;
+                }
+                .clockwork-clocksp{
+                    width: 100%;
+                    height: 67vw;
+                    object-fit: cover;
+                    display: inline-block !important;
+                }
+                .clockwork-moloko {
+                    width: 30vw;
+                    height: 8vw;
+                    object-fit: contain;
+                    top: 85%;
+                    transform: translateY(0%) translateX(-50%);
+                }
+                .clockwork-footerhuman {
+                    width: 20vw;
+                    height: 15vw;
+                    top: 85%;
+                    left: 80%;
+                    object-fit: contain;
+                }
+                .clockwork-text {
+                    top: 90%;
+                    left: 28%;
+                }
+            }
         }
     }
 }
