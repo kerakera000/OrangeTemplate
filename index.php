@@ -94,15 +94,34 @@
                     setup_postdata( $post ); // 記事データの取得
                 ?>
                     <li>
-                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(''); ?></a>
                     </li>
                 <?php
                     endforeach; // ループの終了
                     wp_reset_postdata(); // 直前のクエリを復元する
                 ?>
             </ul>
-
             
+            <ul class="custom-post">
+                <?php
+                    $args = array (
+                        'post_type' => array('item'), // 投稿タイプ
+                        'posts_per_page' => 2 // 取得する投稿数
+                    );
+                    $myposts = get_posts( $args );
+                    foreach( $myposts as $post ):
+                    setup_postdata($post); //グローバル変数$postを書き換え
+                ?>
+                    <!-- 投稿を出力する処理 -->
+                    <li>
+                        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/wakugumi.png" alt=""><img src="" alt="">
+                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+                    </li>
+                <?php
+                    endforeach;
+                    wp_reset_postdata(); // $postをグローバル変数に戻す
+                ?>
+            </ul>
         </div>
 
     </section>
